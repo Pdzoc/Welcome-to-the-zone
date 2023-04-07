@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  background: url(./easy-g6fbde6d9a_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  max-width: 200px;
+  position: fixed;
+  left: -40px;
+  top: -55px;
+  z-index: 1;
+  transform: rotate(-15deg);
+  filter: brightness(0.8);
+}
+
+#container {
+  display: flex;
+  padding: 10px 20px;
+  z-index: 2;
+}
+#container * {
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Dinarjev Republika", sans-serif;
+  color: whitesmoke;
+}
+
+main {
+  background: hsl(27, 100%, 12%);
+  background: linear-gradient(207deg, rgb(51, 23, 0) 0%, rgb(58, 26, 1) 49%);
+  border-radius: 10px;
+  max-width: 650px;
+}
+main img {
+  max-width: 150px;
+}
+main #data {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  background-image: url(./hd-wallpaper-1074131_640.jpg);
+  transform: rotate(0.5deg);
+  box-shadow: 2px 2px 5px;
+  color: black;
+}
+main .social {
+  display: flex;
+  justify-content: center;
+}
+main .social a {
+  margin: 5px;
+}
+main article {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+main article #photo {
+  width: 200px;
+  text-align: center;
+  background-color: rgb(245, 232, 198);
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 3px solid;
+}
+
+tr td:first-child {
+  font-size: x-large;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  padding-right: 4px;
+}
+
+tr td:last-child {
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
+  padding-left: 5px;
+  border-left: 3px solid;
+}
+
+footer {
+  text-align: center;
+}
+footer h1 {
+  font-size: 65px;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1200px) {
+  #container {
+    flex-direction: column;
+  }
+  body {
+    background-position-x: 15%;
+  }
+  header {
+    text-align: center;
+    margin: auto;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  main {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  article {
+    padding: 3px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 415px) {
+  h1 {
+    font-size: 55px;
+  }
+  footer h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 500px) {
+  #data {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #container {
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 90px;
+  }
+  main {
+    width: 43%;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
